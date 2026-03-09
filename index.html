@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Weather Dashboard</h1>
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="cityInput" 
+            placeholder="Enter city name"
+        >
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Weather Card -->
+    <div id="weatherCard" class="weather-card">
+
+        <h2 id="cityName">City</h2>
+
+        <!-- Weather Icon -->
+        <img src="data:image/jpeg;base64,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" src="" alt="Weather Icon">
+
+        <p id="temperature">Temperature: 36°C</p>
+
+        <p id="description">Condition: Excessive heat</p>
+
+        <p id="humidity">Humidity: 20%</p>
+
+        <p id="wind">Wind Speed: 7km/h</p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
