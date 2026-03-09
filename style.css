@@ -1,0 +1,54 @@
+#weatherIcon{
+width:800px;
+height:800px;
+margin:100px;
+}
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #0d49ee, #f0eeec);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+
+.container{
+background: white;
+padding: 30px;
+border-radius: 12px;
+text-align: center;
+width: 350px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+margin-bottom: 20px;
+}
+
+.search-box{
+margin-bottom: 20px;
+}
+
+input{
+padding: 10px;
+width: 70%;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+button{
+padding: 10px 15px;
+border: none;
+background: #3498db;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover
+
+.weather-card p{
+font-size: 16px;
+margin: 6px 0;
+}
